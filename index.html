@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kindly Promised</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kindly promised, fully dedicated</h1>
+    <p class="clue">Clue: The day you first called me yours (MMDD format)</p>
+    <input type="password" id="passcode" placeholder="Enter passcode">
+    <button onclick="checkPasscode()">Continue</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById("passcode").value;
+      const correct = "0723"; // ← Change this to your actual passcode
+      if (input === correct) {
+        window.location.href = "main.html"; // ← This will be your tribute homepage
+      } else {
+        document.getElementById("error").innerText = "Incorrect passcode. Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
