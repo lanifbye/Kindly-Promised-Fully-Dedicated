@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poems Gate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Poems</h1>
+    <p class="clue">Clue: The word you used to describe my writing</p>
+    <input type="password" id="passcode" placeholder="Enter passcode">
+    <button onclick="checkPasscode()">Unlock</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById("passcode").value;
+      const correct = "gentle";
+      if (input === correct) {
+        window.location.href = "poems.html";
+      } else {
+        document.getElementById("error").innerText = "Incorrect passcode. Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
