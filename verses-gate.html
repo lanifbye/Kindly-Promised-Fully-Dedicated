@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bible Verses Gate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bible Verses</h1>
+    <p class="clue">Clue: The verse I sent when you were hurting</p>
+    <input type="password" id="passcode" placeholder="Enter passcode">
+    <button onclick="checkPasscode()">Unlock</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById("passcode").value;
+      const correct = "ps3418";
+      if (input === correct) {
+        window.location.href = "verses.html";
+      } else {
+        document.getElementById("error").innerText = "Incorrect passcode. Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
