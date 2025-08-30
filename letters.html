@@ -7,7 +7,7 @@
   <script>
     function checkPasscode() {
       const input = document.getElementById("passcode").value;
-      const correct = "0514"; // Passcode for Letters
+      const correct = "0514"; // ✅ Your actual passcode
       if (input === correct) {
         document.getElementById("content").style.display = "block";
         document.getElementById("gate").style.display = "none";
@@ -23,7 +23,7 @@
 <body>
   <div id="gate" class="container">
     <h1>Letters</h1>
-    <p><strong>Clue:</strong> the day I started to court you</p>
+    <p><strong>Clue:</strong> the day I started to court you</p> <!-- ✅ Your actual clue -->
     <input type="text" id="passcode" placeholder="Enter passcode">
     <button onclick="checkPasscode()">Submit</button>
   </div>
