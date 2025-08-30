@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1>Letters</h1>
-    <p class="clue">Clue: The number of days I wrote to you</p>
+    <p class="clue">Clue: The day I started courting you</p>
     <input type="password" id="passcode" placeholder="Enter passcode">
     <button onclick="checkPasscode()">Unlock</button>
     <p id="error" style="color: red;"></p>
@@ -17,7 +17,7 @@
   <script>
     function checkPasscode() {
       const input = document.getElementById("passcode").value;
-      const correct = "42";
+      const correct = "0514";
       if (input === correct) {
         window.location.href = "letters.html";
       } else {
