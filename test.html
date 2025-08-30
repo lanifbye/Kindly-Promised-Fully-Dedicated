@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Gate</title>
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById("passcode").value;
+      if (input === "0514") {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("gate").style.display = "none";
+      } else {
+        alert("Incorrect passcode.");
+      }
+    }
+  </script>
+  <style>
+    #content { display: none; }
+  </style>
+</head>
+<body>
+  <div id="gate">
+    <p>Clue: the day I started to court you</p>
+    <input type="text" id="passcode">
+    <button onclick="checkPasscode()">Submit</button>
+  </div>
+
+  <div id="content">
+    <h1>Unlocked!</h1>
+    <p>This is the hidden content.</p>
+  </div>
+</body>
+</html>
