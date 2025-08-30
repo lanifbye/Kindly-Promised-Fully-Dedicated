@@ -4,9 +4,31 @@
   <meta charset="UTF-8">
   <title>Letters</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    function checkPasscode() {
+      const input = document.getElementById("passcode").value;
+      const correct = "0514"; // Passcode for Letters
+      if (input === correct) {
+        document.getElementById("content").style.display = "block";
+        document.getElementById("gate").style.display = "none";
+      } else {
+        alert("Incorrect passcode. Try again.");
+      }
+    }
+  </script>
+  <style>
+    #content { display: none; }
+  </style>
 </head>
 <body>
-  <div class="container">
+  <div id="gate" class="container">
+    <h1>Letters</h1>
+    <p><strong>Clue:</strong> the day I started to court you</p>
+    <input type="text" id="passcode" placeholder="Enter passcode">
+    <button onclick="checkPasscode()">Submit</button>
+  </div>
+
+  <div id="content" class="container">
     <h1>42 Letters</h1>
     <p>Click a day to read the letter I wrote for you.</p>
     <div class="menu">
