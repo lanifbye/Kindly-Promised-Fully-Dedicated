@@ -8,7 +8,7 @@
 <body>
   <div class="container">
     <h1>Songs</h1>
-    <p class="clue">Clue: Our favorite artist’s birth year</p>
+    <p class="clue">Clue: A nickname I gave you with 3 letters</p>
     <input type="password" id="passcode" placeholder="Enter passcode">
     <button onclick="checkPasscode()">Unlock</button>
     <p id="error" style="color: red;"></p>
@@ -17,7 +17,7 @@
   <script>
     function checkPasscode() {
       const input = document.getElementById("passcode").value;
-      const correct = "1998";
+      const correct = "ria";
       if (input === correct) {
         window.location.href = "songs.html";
       } else {
