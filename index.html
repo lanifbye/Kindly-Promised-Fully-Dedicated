@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Kindly Promised</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('images/clocks.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Georgia', serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -17,9 +27,9 @@
   <script>
     function checkPasscode() {
       const input = document.getElementById("passcode").value;
-      const correct = "0521"; // ← Updated passcode
+      const correct = "0521";
       if (input === correct) {
-        window.location.href = "main.html"; // ← Tribute homepage
+        window.location.href = "main.html";
       } else {
         document.getElementById("error").innerText = "Incorrect passcode. Try again.";
       }
