@@ -12,26 +12,30 @@
       background-position: center;
       background-repeat: no-repeat;
       background-attachment: fixed;
+      color: white; /* optional: makes text readable on darker bg */
+      text-align: center;
+      padding-top: 100px;
+      font-family: sans-serif;
     }
 
-    .container {
-      background-color: rgba(255, 255, 255, 0.8); /* optional soft box */
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 400px;
-      margin: 100px auto;
-      text-align: center;
+    input, button {
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    #error {
+      color: #ff8080;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Poems</h1>
-    <p class="clue">Clue: The day we met</p>
-    <input type="password" id="passcode" placeholder="Enter passcode">
-    <button onclick="checkPasscode()">Unlock</button>
-    <p id="error" style="color: red;"></p>
-  </div>
+  <h1>Poems</h1>
+  <p class="clue">Clue: The day we met</p>
+  <input type="password" id="passcode" placeholder="Enter passcode">
+  <button onclick="checkPasscode()">Unlock</button>
+  <p id="error"></p>
 
   <script>
     function checkPasscode() {
