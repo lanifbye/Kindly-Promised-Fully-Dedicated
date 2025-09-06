@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <title>Songs Gate</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('images/hamster.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Georgia', serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <h1>Songs</h1>
-    <p class="clue">Clue: A nickname I gave you with 3 letters</p>
+    <p class="clue">Clue: The song that made you cry</p>
     <input type="password" id="passcode" placeholder="Enter passcode">
     <button onclick="checkPasscode()">Unlock</button>
     <p id="error" style="color: red;"></p>
@@ -17,7 +27,7 @@
   <script>
     function checkPasscode() {
       const input = document.getElementById("passcode").value;
-      const correct = "ria";
+      const correct = "0923";
       if (input === correct) {
         window.location.href = "songs.html";
       } else {
