@@ -4,38 +4,25 @@
   <meta charset="UTF-8">
   <title>Poems Gate</title>
   <link rel="stylesheet" href="style.css">
-
   <style>
     body {
       background-image: url('images/turtle.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: white; /* optional: makes text readable on darker bg */
-      text-align: center;
-      padding-top: 100px;
-      font-family: sans-serif;
-    }
-
-    input, button {
-      padding: 10px;
-      margin: 10px;
-      border-radius: 5px;
-      border: none;
-    }
-
-    #error {
-      color: #ff8080;
+      color: white;
+      font-family: 'Georgia', serif;
     }
   </style>
 </head>
 <body>
-  <h1>Poems</h1>
-  <p class="clue">Clue: The day we met</p>
-  <input type="password" id="passcode" placeholder="Enter passcode">
-  <button onclick="checkPasscode()">Unlock</button>
-  <p id="error"></p>
+  <div class="container">
+    <h1>Poems</h1>
+    <p class="clue">Clue: The day we met</p>
+    <input type="password" id="passcode" placeholder="Enter passcode">
+    <button onclick="checkPasscode()">Unlock</button>
+    <p id="error" style="color: red;"></p>
+  </div>
 
   <script>
     function checkPasscode() {
