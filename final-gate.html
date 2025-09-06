@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <title>Final Message Gate</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-image: url('images/clocks.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      font-family: 'Georgia', serif;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -12,7 +22,6 @@
     <input type="password" id="passcode" placeholder="Enter passcode">
     <button onclick="checkPasscode()">Unlock</button>
     <p id="error" style="color: red;"></p>
-  </div>
 
   <script>
     function checkPasscode() {
