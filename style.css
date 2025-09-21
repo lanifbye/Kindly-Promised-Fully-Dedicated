@@ -111,3 +111,13 @@ button:hover {
 .verse-grid .button:hover {
   background-color: #8e44ad;
 }
+.letter {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  font-size: 1.1em;
+  line-height: 1.6;
+  text-align: left;
+  margin-top: 20px;
+}
