@@ -7,7 +7,7 @@
 }
 
 .song {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(93, 42, 122, 0.2);
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -23,34 +23,23 @@
   height: 200px;
   border-radius: 10px;
   border: none;
+  margin-bottom: 10px;
 }
 
 .song p {
-  margin: 8px 0;
+  margin: 6px 0;
   font-size: 0.95em;
   line-height: 1.4;
   color: #f0e6f6;
+  text-align: left;
 }
 
 body.songs-page {
-  background: linear-gradient(to bottom right, #2e003e, #5d2a7a, #8e44ad, #d8b4e2);
-  color: #f5f5f5;
-  font-family: 'Georgia', serif;
-  margin: 0;
+  display: block;
+  height: auto;
+  overflow-y: auto;
   padding: 40px 0;
-}
-
-.songs-page .container {
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.songs-page h1 {
-  font-size: 2.2em;
-  margin-bottom: 30px;
-  text-align: center;
+  background: linear-gradient(to bottom right, #2e003e, #5d2a7a, #8e44ad, #d8b4e2);
 }
 
 @media (max-width: 768px) {
@@ -61,10 +50,6 @@ body.songs-page {
 
   .song iframe {
     height: 180px;
-  }
-
-  .songs-page h1 {
-    font-size: 1.6em;
   }
 
   .song p {
