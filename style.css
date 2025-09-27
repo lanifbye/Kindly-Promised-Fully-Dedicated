@@ -1,13 +1,6 @@
-.songs-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 40px;
-  padding: 0 20px;
-}
 
 .song {
-  background-color: rgba(93, 42, 122, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
@@ -23,15 +16,21 @@
   height: 200px;
   border-radius: 10px;
   border: none;
-  margin-bottom: 10px;
 }
 
 .song p {
-  margin: 6px 0;
+  margin: 8px 0;
   font-size: 0.95em;
   line-height: 1.4;
   color: #f0e6f6;
-  text-align: left;
+}
+
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
 }
 
 body.songs-page {
@@ -39,10 +38,14 @@ body.songs-page {
   height: auto;
   overflow-y: auto;
   padding: 40px 0;
-  background: linear-gradient(to bottom right, #2e003e, #5d2a7a, #8e44ad, #d8b4e2);
 }
 
 @media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 10px;
+  }
+
   .songs-grid {
     grid-template-columns: 1fr;
     padding: 0 10px;
@@ -52,7 +55,11 @@ body.songs-page {
     height: 180px;
   }
 
-  .song p {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  p {
     font-size: 0.95em;
   }
 }
